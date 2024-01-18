@@ -66,7 +66,7 @@ function App() {
     <div className='app-container'>
       <div className="header-container">
         <img src={image} alt='Currency Converter' className='icon'/>
-        <h1>Currency Converter</h1>
+        <h1>Let's Convert</h1>
       </div>
       <CurrencyRow
         currencyOptions={currencyOptions}
@@ -76,7 +76,7 @@ function App() {
         onChangeAmount={handleFromAmountChange}
         amount={fromAmount.toString()}
       />
-
+      <div className="currency-row">to</div>
       <CurrencyRow
         currencyOptions={currencyOptions}
         currencyFullNames={currencyFullNames}
